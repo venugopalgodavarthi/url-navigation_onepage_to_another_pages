@@ -17,6 +17,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATES_DIRS=os.path.join(BASE_DIR,'templates')
 TEMPLATES_DEMO_DIRS=os.path.join(os.path.join(BASE_DIR,'demo'),'templates')
 TEMPLATES_SAMPLE_DIRS=os.path.join(os.path.join(BASE_DIR,'sample'),'templates')
+TEMPLATES_INDEX_DIRS=os.path.join(os.path.join(BASE_DIR,'index'),'templates')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -38,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles','demo','sample',
+    'django.contrib.staticfiles','demo','sample','index',
 ]
 
 MIDDLEWARE = [
@@ -56,7 +57,7 @@ ROOT_URLCONF = 'pro4.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATES_DIRS,TEMPLATES_DEMO_DIRS,TEMPLATES_SAMPLE_DIRS],
+        'DIRS': [TEMPLATES_DIRS,TEMPLATES_DEMO_DIRS,TEMPLATES_SAMPLE_DIRS,TEMPLATES_INDEX_DIRS],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

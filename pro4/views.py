@@ -5,3 +5,6 @@ def home(request):
 
 def about(request):
     return render(request,'about.html')
+
+def venu(request,new):
+    return render(request,'venu.html',{'new':new})

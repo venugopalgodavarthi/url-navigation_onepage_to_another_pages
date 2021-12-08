@@ -8,10 +8,11 @@
 </head>
 <body>
     <h1> this is home page </h1>
+
+    <h2>customer id {{id}}</h2>
     <a href="{% url 'about' %}"><button>about</button></a>
     <a href="{% url 'demo:demoa' %}"><button>demoa</button></a>
     <a href="{% url 'sample:demoa' %}"><button>sample demoa</button></a>
     <a href="{% url 'venu' new='venugopal'%}"><button>venu</button></a>
-    <a href="{% url 'index:indexA' id='Id00123'%}"><button>index</button></a>
 </body>
 </html>

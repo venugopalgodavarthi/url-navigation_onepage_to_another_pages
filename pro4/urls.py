@@ -20,6 +20,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('demo/',include('demo.urls')),
     path('sample/',include('sample.urls')),
+    path('index/',include('index.urls')),
     path('home/', views.home, name='home'),
     path('about/', views.about, name='about'),
+    path('venu/<new>/', views.venu, name='venu'),
 ]
